@@ -1,0 +1,149 @@
+.project{
+    width: 49.4rem;
+    height: 33.8rem;
+    &-container{
+        @media  screen and (max-width: $big-phone){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &-detail{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+        grid-template-rows: repeat(3,1fr);
+        grid-gap: 10rem;
+        margin-left: 10%;
+        margin-top: 8.7rem;
+        @media  screen and (min-width: $big-screen){
+            margin-left: 5%;
+        }
+        @media  screen and (max-width: $medium-laptop){
+            grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+            margin-left: 2% ;
+        }
+
+        @media  screen and (max-width: $tablet){
+            grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+            margin-left: 4% ;
+        }
+
+    }
+
+
+    &-1{
+        @include project-card(var(--color-orange),var(--color-orange) );
+    }
+    &-2{
+        @include project-card(var(--color-yellow),var(--color-yellow) );
+    }
+    &-3{
+        @include project-card(var(--color-crimson),var(--color-crimson) );
+    }
+    &-4{
+        @include project-card(var(--color-green),var(--color-green) );
+    }
+    &-5{
+        @include project-card(var(--color-lightblue),var(--color-lightblue) );
+    }
+    &-6{
+        @include project-card(var(--color-blue),var(--color-blue) );
+    }
+
+    &-title{
+        font-size: 3.6rem;
+        font-weight: bold;
+        text-align: center;
+        color: var(--color-text);
+    }
+
+    &-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 7rem;
+    }
+
+    &-button{
+        display: flex;
+        margin-top: 7rem;
+    }
+
+    &-icon-link{
+        margin-left: 2.5rem;
+        margin-right: 3rem;
+    }
+
+    &-icon-github{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+}
+
+.btn{
+    text-decoration: none;
+    width: 14.7rem;
+    height: 4.5rem;
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    transition: all .2s;
+
+    &:hover{
+        transform: translateY(-.5rem);
+    }
+    &:active{
+        transform: translateY(.7rem);
+    }
+}
+.btn-visit{
+    &-1{
+        @include button-visit(var(--color-orange), var(--shadow-orange));
+    }
+
+    &-2{
+        @include button-visit(var(--color-yellow), var(--shadow-yellow));
+    }
+    &-3{
+        @include button-visit(var(--color-crimson), var(--shadow-crimson));
+    }
+    &-4{
+        @include button-visit(var(--color-green), var(--shadow-green));
+    }
+    &-5{
+        @include button-visit(var(--color-lightblue), var(--shadow-lightblue));
+    }
+    &-6{
+        @include button-visit(var(--color-blue), var(--shadow-blue));
+    }
+
+}
+
+.btn-source{
+
+    &-1{
+        @include button-source(var(--color-orange));
+    }
+    &-2{
+        @include button-source(var(--color-yellow));
+    }
+    &-3{
+        @include button-source(var(--color-crimson));
+    }
+    &-4{
+        @include button-source(var(--color-green));
+    }
+    &-5{
+        @include button-source(var(--color-lightblue));
+    }
+    &-6{
+        @include button-source(var(--color-blue));
+    }
+}
+
+
+

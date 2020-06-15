@@ -1,0 +1,56 @@
+@mixin card{
+    background-color: var(--background-color);
+    box-shadow: 10px 10px 2px var(--color-orange);
+    border: 3px solid var(--color-orange);
+
+    border-radius: 2rem;
+    @media  screen and (max-width: $big-phone){
+        box-shadow: 5px 5px 2px var(--color-orange);
+    }
+    @media  screen and (max-width: $phone){
+        box-shadow: 2px 2px 1px var(--color-orange);
+    }
+}
+
+@mixin project-card($shadow-color, $border-color) {
+    background-color: var(--background-color);
+    box-shadow: 10px 10px 2px $shadow-color;
+    border: 3px solid $border-color;
+
+    border-radius: 2rem;
+    @media  screen and (max-width: $big-phone){
+        box-shadow: 5px 5px 2px $shadow-color;
+    }
+    @media  screen and (max-width: $phone){
+        box-shadow: 2px 2px 1px $shadow-color;
+    }
+
+}
+
+@mixin button-visit($bg-color,  $shadow-color){
+    background: $bg-color;
+    box-shadow: 0px 3px 4px $shadow-color;
+    border-radius: 2rem;
+    color: #fff;
+    margin-right: 3rem;
+    @media  screen and (max-width: $big-phone){
+        box-shadow: 0px 1px 3px $shadow-color;
+    }
+    @media  screen and (max-width: $phone){
+        box-shadow: 0px .5px 2px $shadow-color;
+    }
+}
+
+@mixin button-source($border-color) {
+    border: 3px solid $border-color;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    color: var(--color-text);
+    margin-left: 3rem;
+    @media  screen and (max-width: $tablet){
+        border: 2px solid $border-color;
+    }
+    @media  screen and (max-width: $big-phone){
+        border: 1px solid $border-color;
+    }
+}

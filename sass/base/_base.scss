@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+:root{
+    --background-color: #FBF9F9;
+    --skewed-color: #FBF9F9;
+    --color-text: #131F2D;
+    --color-orange: #EB7508;
+    --color-yellow: #ECE305;
+    --color-crimson: #EB0823;
+    --color-green: #039948;
+    --color-lightblue: #04C2C2;
+    --color-blue: #042DBD;
+    --header-color: rgb(195, 202, 211);
+    --shadow-orange:rgba(235, 117, 8, 0.5);
+    --shadow-yellow: rgba(236, 227, 5, 0.5);
+    --shadow-crimson:rgba(235, 8, 35, 0.5);
+    --shadow-green: rgba(4, 176, 83, 0.5);
+    --shadow-lightblue: rgba(4, 194, 194, 0.5);
+    --shadow-blue: rgba(4, 45, 189, 0.5);
+    --h1-color: #3A3A3A;
+    --type-color: #EB7508;
+    --social-text: #131F2D;
+    --social-background: #fff;
+    --footer-background: #F2F1F1;
+    --footer-border: #000;                            
+    --footer-color: #000;
+    --toggle-background: #21354C;
+
+}
+
+.darkmode{
+    --background-color: #131F2D; 
+    --skewed-color: #FBF9F9;
+    --color-text: #FBF9F9;
+    --card-background: #1A2634;
+    --color-orange: #EB7508;
+    --color-yellow: #ECE305;
+    --color-crimson: #EB0823;
+    --color-green: #039948;
+    --color-lightblue: #04C2C2;
+    --color-blue: #042DBD;
+    --header-color: #fff;
+    --shadow-orange:rgba(235, 117, 8, 0.5);
+    --shadow-yellow: rgba(236, 227, 5, 0.5);
+    --shadow-crimson:rgba(235, 8, 35, 0.5);
+    --shadow-green: rgba(4, 176, 83, 0.5);
+    --shadow-lightblue: rgba(4, 194, 194, 0.5);
+    --shadow-blue: rgba(4, 45, 189, 0.5);
+    --h1-color: #FBF9F9;
+    --type-color: #EB7508;
+    --social-background: #131F2D;
+    --social-text: #FBF9F9;
+    --footer-background: #21354C;
+    --footer-border: #000;
+    --footer-color: #fff;
+    --toggle-background: #fff;
+
+}
+
+//breaking point
+$huge-screen: 160em; //2560px
+$big-screen: 106.25em;  //1700px
+$big-computer: 95.56em; //1529px
+$medium-computer: 92.94em; //1487px
+$medium-laptop: 75em; // 1200px
+$small-laptop: 64em; //1024px
+$tablet: 48em; //768px
+$big-phone: 26.57em; //425px
+$phone: 23.44em; //375px
+$small-phone: 20em; //320px
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media  screen and (min-width: $huge-screen){
+        font-size: 100% !important;
+    }
+    @media  screen and (min-width: $big-screen){
+        font-size: 78%;
+    }
+    @media  screen and (max-width: $small-laptop){
+        font-size: 49%;
+    }
+    @media  screen and (max-width: $tablet){
+        font-size: 38%;
+    }
+    @media  screen and (max-width: $big-phone){
+        font-size: 30%;
+    }
+    @media  screen and (max-width: $phone){
+        font-size: 34%;
+    }
+}
+
+body{
+    line-height:  1.6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    background: var(--background-color);
+}
+
+.container{
+    min-height: calc(100vh - 239px - 120px);
+}

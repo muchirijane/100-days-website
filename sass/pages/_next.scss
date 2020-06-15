@@ -1,0 +1,77 @@
+.next{
+
+  &-container{
+    @media  screen and (max-width: $medium-laptop){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &-box{
+    @include project-card(var(--color-orange), var(--color-orange));
+    width: 124.0rem;
+    height: 28.0rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+
+    @media  screen and (max-width: $medium-laptop){
+      width: 104.0rem;
+      height: 32.0rem;
+    }
+
+    @media  screen and (max-width: $tablet){
+      width: 110.0rem;
+      height: 30.0rem;
+      margin-left: 4%;
+      margin-right: 4%;
+    }
+    @media  screen and (max-width: $big-phone){
+      width: 80.0rem;
+      height: 35.0rem;
+    }
+    @media  screen and (max-width: $phone){
+      width: 65.0rem;
+      height: 40.0rem;
+    }
+    @media  screen and (max-width: $small-phone){
+      width: 65.0rem;
+      height: 40.0rem;
+    }
+  }
+
+   &-details{
+       padding: 0 6rem;
+
+       @media  screen and (max-width: $phone){
+        padding: 0 4rem;
+      }
+   }
+
+   &-title{
+       margin-top: 4rem;
+       font-size: 2.8rem;
+       color: var(--color-text);
+   }
+
+   &-text{
+       font-size: 2rem;
+       margin-top: 1.5rem;
+       margin-bottom: 1rem;
+       color: var(--color-text);
+   }
+
+   &-advice-box{
+      @include project-card(var(--color-yellow), var(--color-yellow));
+
+    }
+
+    &-challenge-box{
+        @include project-card(var(--color-green), var(--color-green));
+  
+      }
+}   
+
+//next.scss

@@ -1,0 +1,98 @@
+.card{
+    height: 33.8rem;
+    width: 49.4rem;
+    background: var(--background-color);
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+
+    @media  screen and (max-width: $big-phone){
+        margin-bottom: 12rem;
+    }
+
+    &:hover{
+        transform: translateY(1rem);
+    }
+    &:active{
+        transform: translateY(-.5rem);
+    }
+
+    &-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+        grid-template-rows: repeat(2,1fr);
+
+        @media  screen and (min-width: $big-screen){
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        @media  screen and (max-width: $big-computer){
+            margin-left: 5% ;
+            margin-right: 5%;
+        }
+        @media  screen and (max-width: $medium-computer){
+            margin-left: 8% ;
+            margin-right: 8%;
+        }
+        @media  screen and (max-width: $medium-laptop){
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            margin-left: 2rem;
+        }
+        @media  screen and (max-width: $tablet){
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            margin-left: 2% ;
+        }
+        @media  screen and (max-width: $big-phone){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &-header{
+        font-size: 3.6rem;
+        color: var(--color-text);
+        margin-bottom: 4.1rem;
+    }
+
+    &-skill{
+        @include project-card(var(--color-orange), var(--color-orange));
+       
+
+        &:hover{
+            box-shadow: 5px 5px 2px var(--color-orange);
+        }
+        
+    }
+
+    &-project{
+        @include project-card(var(--color-yellow), var(--color-yellow));
+
+        &:hover{
+            box-shadow: 5px 5px 2px var(--color-yellow);
+        }
+    }
+
+    &-resource{
+        @include project-card(var(--color-crimson), var(--color-crimson));
+
+        &:hover{
+            box-shadow: 5px 5px 2px var(--color-crimson);
+        }
+    }
+
+    &-next{
+        @include project-card(var(--color-green), var(--color-green));
+
+        &:hover{
+            box-shadow: 5px 5px 2px var(--color-green);
+        }
+        
+    }
+}
+//home.scss

@@ -1,0 +1,10 @@
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(2, min-content );
+    grid-template-rows: repeat(2, min-content );
+    grid-column-gap: 21rem;
+    grid-row-gap: 15rem;
+    margin-top: 8rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}

@@ -1,0 +1,125 @@
+.skill-box{
+    @include card;
+
+    height: 49.8rem;
+    width: 118.1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 4.7rem;
+
+    @media  screen and (max-width: $medium-laptop){
+        height: 65.8rem;
+        width: 98.1rem;
+    }
+
+    @media  screen and (max-width: $tablet){
+        height: 53.8rem;
+        width: 108.1rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    @media  screen and (max-width: $big-phone){
+        height: 90.8rem;
+        width: 65.1rem;
+    }
+    @media  screen and (max-width: $phone){
+        height: 90.8rem;
+        width: 63.1rem;
+    }
+
+}
+.skill{
+
+    &-container{
+        @media  screen and (max-width: $big-phone){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &-detail{
+        margin-top: 2.2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-template-rows: repeat(2,1fr);
+        margin-right: 5%;
+        margin-left: 5%;
+        grid-gap: 4rem;
+    }
+
+    &-text{
+        font-size: 2.4rem;
+        text-align: center;
+        color: var(--color-text);
+
+        @media  screen and (max-width: $tablet){
+            padding-top: 2rem;
+        }
+    }
+    &-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &-icons{
+        font-size: 10rem;
+        color: var(--color-text);
+    }
+}
+
+.personal{
+    margin-top: 7.8rem;
+    height: 52rem;
+    width: 118.1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    @media  screen and (max-width: $medium-laptop){
+        height: 58rem;
+        width: 100rem;
+    }
+
+    @media  screen and (max-width: $tablet){
+        height: 58rem;
+        width: 108.1rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    @media  screen and (max-width: $big-phone){
+        height: 75rem;
+        width: 68.1rem;
+        margin-left: 0; 
+        margin-right: 0;
+    }
+
+    @media  screen and (max-width: $phone){
+        height: 70.8rem;
+        width: 63.1rem;
+    }
+
+    @include card;
+
+    &-title{
+        text-align: center;
+        font-size: 3rem;
+        color: var(--color-orange);
+        margin-top: 2.2rem;
+        margin-bottom: 2.2rem;
+        text-transform: uppercase;
+    }
+
+    &-message{
+        margin-left: 4%;
+        margin-right: 4%;
+        font-size: 2.2rem;
+        color: var(--h1-color);
+
+        &:not(:last-child){
+            padding-bottom: 2rem;
+        }
+    }
+}
+//skill.scss

@@ -1,0 +1,157 @@
+//toggle style
+.label{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #21354C;
+    display: flex;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+
+    @media  screen and (min-width: $big-screen){
+        width: 80px;
+        height: 80px;
+    }
+    @media  screen and (max-width: $small-phone){
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.toggle-icon{
+    padding: .3rem;
+    font-size: 2rem;
+
+    @media  screen and (min-width: $big-screen){
+        font-size: 3rem;
+        margin: -1rem;
+    }
+    @media  screen and (max-width: $tablet){
+        padding: 0;
+        font-size: 3rem;
+    }
+    @media  screen and (max-width: $big-phone){
+        font-size: 4rem;
+        margin: -1.5rem;
+    }
+}
+.fa-moon{
+    color: var(--color-yellow);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fa-sun{
+    color: var(--color-orange);
+    margin-left: -2.5rem;
+}
+
+.checkbox{
+    opacity: 0;
+    visibility: hidden;
+}
+// .checkbox:checked + .label .ball{
+//     margin-left: 2.8rem;
+// }
+
+.checkbox:checked + .label .fa-moon{
+    visibility: visible;
+    opacity: 1;  
+}
+
+.checkbox:checked + .label .fa-sun{
+    visibility: hidden;
+    opacity: 0;  
+}
+
+//cta styling
+.cta{
+    outline: none;
+    background: none;
+    font-size: 2.4rem;
+    border: none;
+    border-bottom: 5px solid #000;
+    cursor: pointer;
+    transition: all .2s;
+    @media  screen and (max-width: $phone){
+        border-bottom: 2px solid #000;
+    }
+
+    &:hover{
+        transform: scale(1.06);
+    }
+}
+
+.cta-skill{
+    border-bottom-color: var(--color-orange);
+    color: var(--color-orange);
+}
+.cta-project{
+    border-bottom-color: var(--color-yellow);
+    color: var(--color-yellow);
+}
+.cta-resource{
+    border-bottom-color: var(--color-crimson);
+    color: var(--color-crimson);
+}
+.cta-next{
+    border-bottom-color: var(--color-green);
+    color: var(--color-green);
+}
+
+.typed-cursor{
+    color: var(--color-orange);
+}
+
+//scrollbar
+::-webkit-scrollbar{
+    width: 18px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-orange);
+    height: 10rem;
+    border-radius: 10px;
+    margin-right: 2px;
+    :hover{
+        background-color: rgb(206, 58, 4);
+    }
+}
+::-webkit-scrollbar-track{
+    border: 1px solid var(--background-color);
+    background: var(--background-color);
+    box-shadow: inset 0 0 2px 2px rgba(0,0,0, .05)
+}
+
+//the circles on cards
+
+.circle{
+    display: flex;
+    align-items: center;
+    margin-top: 2.3rem;
+    margin-left: 3rem;
+    margin-bottom: 2.3rem;
+
+    &-button{
+        height: 2.2rem;
+        width: 2.2rem;
+        border-radius: 50%;
+        &:not(:last-child){
+            margin-right: 1.6rem;
+        }
+    }
+    &-orange{
+        background: var(--color-orange);
+    }
+    &-yellow{
+        background: var(--color-yellow);
+    }
+    &-green{
+        background: var(--color-green);
+    }
+}
+
+
+
