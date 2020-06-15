@@ -15,6 +15,8 @@ You're sections headers will be used to reference location of destination.
 
 ---
 
+## Live Code - [Preview](https://muchirijane.github.io/100-days-website/)
+
 ## Description
 
 This is a 100days of code portfolio that i have created after finishing the 100days challenge. 
