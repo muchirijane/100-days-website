@@ -1,4 +1,5 @@
 # 100 days of code website
+## Live Code - [Preview](https://muchirijane.github.io/100-days-website/)
 <!-- ctrl+shift+v : preview -->
 ![Project Image](img/project-preview.png)
 
@@ -14,6 +15,8 @@ You're sections headers will be used to reference location of destination.
 - [Author Info](#author-info)
 
 ---
+
+## Live Code - [Preview](https://muchirijane.github.io/100-days-website/)
 
 ## Description
 
