@@ -31,7 +31,6 @@ But i did it and i have learnt so much. The projects are done with vanilla JavaS
 - CSS
 - SASS
 - JAVASCRIPT
-- API
 
 [Back To The Top](#100-days-of-code-website)
 
