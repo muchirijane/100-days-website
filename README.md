@@ -38,12 +38,12 @@ But i did it and i have learnt so much. The projects are done with vanilla JavaS
 
 ## How To Use
 ```html
-    <p>Use a command Prompt and type : npm start</p>
+    Use a command Prompt and type : npm start
 ```
 
 #### Installation
 ```html
-    <p>Use a command Prompt and type : npm install</p>
+    Use a command Prompt and type : npm install
 ```
  
 ## Author Info
