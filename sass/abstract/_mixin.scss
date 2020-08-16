@@ -16,6 +16,7 @@
     background-color: var(--background-color);
     box-shadow: 10px 10px 2px $shadow-color;
     border: 3px solid $border-color;
+    width: 90%;
 
     border-radius: 2rem;
     @media  screen and (max-width: $big-phone){

@@ -29,7 +29,7 @@
       margin-right: 4%;
     }
     @media  screen and (max-width: $big-phone){
-      width: 80.0rem;
+      width: 75.0rem;
       height: 35.0rem;
     }
     @media  screen and (max-width: $phone){
@@ -37,8 +37,9 @@
       height: 40.0rem;
     }
     @media  screen and (max-width: $small-phone){
-      width: 65.0rem;
+      width: 90%;
       height: 40.0rem;
+
     }
   }
 
@@ -65,13 +66,13 @@
 
    &-advice-box{
       @include project-card(var(--color-yellow), var(--color-yellow));
-      height: 40rem;
+      height: 45rem;
 
     }
 
     &-challenge-box{
         @include project-card(var(--color-green), var(--color-green));
-        height: 40rem;
+        height: 45rem;
   
       }
 }   
