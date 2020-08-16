@@ -65,11 +65,13 @@
 
    &-advice-box{
       @include project-card(var(--color-yellow), var(--color-yellow));
+      height: 40rem;
 
     }
 
     &-challenge-box{
         @include project-card(var(--color-green), var(--color-green));
+        height: 40rem;
   
       }
 }   
